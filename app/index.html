@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Carstyle</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<!--mobile menu-->
+<div id="mobile-menu">
+
+    <div class="mobile-menu__header">
+        <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+    </div>
+
+    <div class="mobile-menu__body">
+        <ul class="menu-product">
+            <li><a href="#">Багажники
+                            (поперечины)
+                            на крышу</a></li>
+            <li>
+                <a href="#">Грузовые
+                            боксы</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="#">На гладкую крышу</a></li>
+                    <li><a href="#">На крепежные места</a></li>
+                    <li><a href="#">На рейлинг (просветный)</a></li>
+                    <li><a href="#">На рейлинг (интегрированные)</a></li>
+                    <li><a href="#">На водостоки</a></li>
+                    <li><a href="#">Аксессуары</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Крепления
+                            для велосипедов</a></li>
+            <li><a href="#">Крепления
+                            для лыж и сноубордов,
+                            лодок и каяк</a></li>
+            <li><a href="#">Рюкзаки
+                            и сумки Thule</a></li>
+            <li><a href="#">Автоаксессуары</a></li>
+            <li><a href="#">Распродажа
+                            и б/у</a></li>
+        </ul>
+        <ul class="list-group main-menu__list-group">
+            <li class="list-group__item"><a class="list-group__item-links" href="#">О нас </a></li>
+            <li class="list-group__item active"><a class="list-group__item-links"
+                                                              href="#">Новости </a></li>
+            <li class="list-group__item"><a class="list-group__item-links" href="#">Оплата и
+                                                                                               доставка </a>
+            </li>
+            <li class="list-group__item"><a class="list-group__item-links" href="#">Контакты</a></li>
+        </ul>
+
+        <div class="item-city">
+            <label class="city-wrapper">
+                <select name="city" class="city-dropdown">
+                    <option value="Киев">Киев</option>
+                    <option value="Киев">Киев</option>
+                    <option value="Киев">Киев</option>
+                </select>
+                <span class="icon"><img src="img/arrow-bottom.png" alt=""></span>
+            </label>
+
+            <label class="city-wrapper">
+                <select name="language" class="language-dropdown">
+                    <option value="Киев">RU</option>
+                    <option value="Киев">UA</option>
+                </select>
+                <span class="icon"><img src="img/arrow-bottom.png" alt=""></span>
+            </label>
+        </div>
+    </div>
+
+</div>
+<!--mobile menu-->
+
+<!--шапка-->
+<header>
+
+    <div class="header__top">
+        <div class="container">
+
+            <div class="burger-menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
+            <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+            <!--основное меню-->
+            <nav class="main-menu">
+                <ul class="list-group main-menu__list-group">
+                    <li class="list-group__item header-box"><a class="list-group__item-links" href="#">О нас </a></li>
+                    <li class="list-group__item header-box active"><a class="list-group__item-links"
+                                                                      href="#">Новости </a></li>
+                    <li class="list-group__item header-box"><a class="list-group__item-links" href="#">Оплата и
+                                                                                                       доставка </a>
+                    </li>
+                    <li class="list-group__item header-box"><a class="list-group__item-links" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <!--основное меню-->
+
+
+            <!--выбор города-->
+            <div class="item-city header-box">
+                <span>Выбрать город</span>
+
+                <label class="city-wrapper">
+                    <select name="city" class="city-dropdown">
+                        <option value="Киев">Киев</option>
+                        <option value="Киев">Киев</option>
+                        <option value="Киев">Киев</option>
+                    </select>
+                    <span class="icon"><img src="img/arrow-bottom.png" alt=""></span>
+                </label>
+            </div>
+            <!--выбор города-->
+
+            <!--график работы-->
+            <ul class="list-group item-schedule header-box">
+                <li>Пн-Пт: 9-19</li>
+                <li>Сб: 10-15, Вс: вых</li>
+            </ul>
+            <!--график работы-->
+
+
+
+
+            <!--кнопка открыть контакты на мобильном-->
+            <div class="btn-mobile-phone">
+                <span class="icon">
+                    <?xml version="1.0" ?>
+                    <svg fill="none" height="24" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                         stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path
+                            d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </span>
+            </div>
+            <!--кнопка открыть контакты на мобильном-->
+
+            <!--телефоны-->
+            <ul class="list-group phone-group header-box">
+                <li><a href="tel:+380983050906" class="phone">
+                    <span class="icon"><img src="img/phone-icon.png" alt=""></span>
+                    (098) 305-09-06</a></li>
+                <li><a href="tel:+380635314630" class="phone">
+                    <span class="icon"><img src="img/phone-icon.png" alt=""></span>
+                    (063) 531-46-30 </a></li>
+                <li><a href="tel:+380501373331" class="phone">
+                    <span class="icon"><img src="img/phone-icon.png" alt=""></span>
+                    (050) 137-33-31</a></li>
+                <li><a href="tel:+380443837300" class="phone">
+                    <span class="icon"><img src="img/phone-icon.png" alt=""></span>
+                    (044) 383-73-00</a></li>
+            </ul>
+            <!--телефоны-->
+
+            <!--блок для мобильного-->
+            <div class="block-mobile">
+                <!--сравнение-->
+                <a href="#" class="compare header-box">
+                    <span class="box-total">14</span>
+                    <span class="icon"><img src="img/compare-icon.png" alt=""></span>
+                </a>
+                <!--сравнение-->
+
+                <!--корзина-->
+                <a href="#" class="basket header-box">
+                    <span class="box-total">6</span>
+                    <span class="icon"><img src="img/cart-icon.png" alt=""></span>
+                </a>
+                <!--корзина-->
+            </div>
+            <!--блок для мобильного-->
+
+            <!--язык-->
+            <ul class="list-group language-group">
+                <li class="active"><a href="#">Ru</a></li>
+                <li><a href="#">Ua</a></li>
+            </ul>
+            <!--язык-->
+
+        </div>
+    </div>
+
+    <!--меню категорий-->
+    <div class="header__menu">
+        <div class="container">
+            <ul class="menu-product">
+                <li><a href="#">Багажники
+                                (поперечины)
+                                на крышу</a></li>
+                <li>
+                    <a href="#">Грузовые
+                                боксы</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">На гладкую крышу</a></li>
+                        <li><a href="#">На крепежные места</a></li>
+                        <li><a href="#">На рейлинг (просветный)</a></li>
+                        <li><a href="#">На рейлинг (интегрированные)</a></li>
+                        <li><a href="#">На водостоки</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Крепления
+                                для велосипедов</a></li>
+                <li><a href="#">Крепления
+                                для лыж и сноубордов,
+                                лодок и каяк</a></li>
+                <li><a href="#">Рюкзаки
+                                и сумки Thule</a></li>
+                <li><a href="#">Автоаксессуары</a></li>
+                <li><a href="#">Распродажа
+                                и б/у</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!--меню категорий-->
+
+
+    <div class="header__bottom">
+        <div class="container">
+
+            <!--поиск-->
+            <form method="post" class="search header-box">
+                <label>
+                    <input type="text" name="search" placeholder="Поиск">
+                </label>
+                <button type="submit"><img src="img/search-icon.png" alt=""></button>
+            </form>
+            <!--поиск-->
+
+            <!--сравнение-->
+            <a href="#" class="compare header-box">
+                <span class="box-total">14</span>
+                <span class="icon"><img src="img/compare-icon.png" alt=""></span>
+            </a>
+            <!--сравнение-->
+
+            <!--корзина-->
+            <a href="#" class="basket header-box">
+                <span class="box-total">6</span>
+                <span class="icon"><img src="img/cart-icon.png" alt=""></span>
+            </a>
+            <!--корзина-->
+        </div>
+    </div>
+
+</header>
+<!--шапка end-->
+
+<div class="content">
+    <!--главный слайдер-->
+    <section class="main__slider">
+
+        <div class="slide">
+            <img src="img/banner1.png" alt="">
+            <div class="container">
+                <div class="text">
+                    <h1>ПРОДАЖА И АРЕНДА</h1>
+
+                    <p>Автобагажников, боксов, аккумуляторов,
+                       велокреплений, лыжных креплений</p>
+                </div>
+
+                <div class="item-social">
+                    <p>Мы в соцсетях:</p>
+
+                    <ul class="list-social list-group">
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="img/banner1.png" alt="">
+            <div class="container">
+                <div class="text">
+                    <h1>Slide 2</h1>
+
+                    <p>Автобагажников, боксов, аккумуляторов,
+                       велокреплений, лыжных креплений</p>
+                </div>
+
+                <div class="item-social">
+                    <p>Мы в соцсетях:</p>
+
+                    <ul class="list-social list-group">
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--главный слайдер end-->
+
+    <!--секция мини категории-->
+    <section class="category-min">
+        <div class="container">
+
+            <div class="item">
+                <a href="#" class="image">
+                    <img src="img/cat-item1.png" alt="">
+                    <span class="icon">
+                        <img src="img/auto-icon.png" alt="">
+                        <span class="text">Подробнее</span>
+                    </span>
+
+                </a>
+                <h3>Подобрать БАГАЖНИК
+                    по автомобилю</h3>
+            </div>
+
+            <div class="dots-arrow">
+                <span> > </span>
+            </div>
+
+            <div class="item">
+                <a href="#" class="image">
+                    <img src="img/cat-item2.png" alt="">
+                    <span class="icon">
+                        <img src="img/calculate-icon.png" alt="">
+                        <span class="text">Подробнее</span>
+                    </span>
+
+                </a>
+                <h3>Просчет стоимости
+                    аренды</h3>
+            </div>
+
+            <div class="dots-arrow">
+                <span> > </span>
+            </div>
+
+            <div class="item">
+                <a href="#" class="image">
+                    <img src="img/photo1.png" alt="">
+                    <span class="icon">
+                        <img src="img/photo-icon.png" alt="">
+                        <span class="text">Подробнее</span>
+                    </span>
+
+                </a>
+                <h3>Фотогалерея
+                    наших установок</h3>
+            </div>
+
+        </div>
+    </section>
+    <!--секция мини категории end-->
+
+    <!--слайдер популярные товары-->
+    <section class="popular-product">
+        <div class="container">
+            <h2><span>Популярные товары</span></h2>
+
+            <div class="popular-product__content popular-product__slider">
+
+                <div class="slide">
+                    <!--карточка продукта-->
+                    <div class="card-product">
+                        <span class="hit">хит</span>
+                        <a href="#" class="image"><img src="img/product.png" alt=""></a>
+                        <a href="#" class="title">Бокс Terra-drive 420</a>
+                        <div class="card-characteristics">
+                            152x100x43 см
+                        </div>
+                        <div class="card-description">
+                            Правосторонний тип открывания створки поворотно-откидной
+                        </div>
+                        <div class="card__bottom">
+                            <div class="price-wrapper">
+                                <p>Цена</p>
+                                <div class="price">
+                                    4 199 <sup>UA</sup>
+                                </div>
+                            </div>
+                            <a href="#" class="compare-icon"><img src="img/compare-icon.png" alt=""></a>
+                            <a href="#" class="btn-accent">В корзину</a>
+                        </div>
+                    </div>
+                    <!--карточка продукта end-->
+                </div>
+
+                <div class="slide">
+                    <!--карточка продукта-->
+                    <div class="card-product">
+                        <a href="#" class="image"><img src="img/product.png" alt=""></a>
+                        <a href="#" class="title">Бокс Terra-drive 420</a>
+                        <div class="card-characteristics">
+                            152x100x43 см
+                        </div>
+                        <div class="card-description">
+                            Правосторонний тип открывания створки поворотно-откидной
+                        </div>
+                        <div class="card__bottom">
+                            <div class="price-wrapper">
+                                <p>Цена</p>
+                                <div class="price">
+                                    4 199 <sup>UA</sup>
+                                </div>
+                            </div>
+                            <a href="#" class="compare-icon"><img src="img/compare-icon.png" alt=""></a>
+                            <a href="#" class="btn-accent">В корзину</a>
+                        </div>
+                    </div>
+                    <!--карточка продукта end-->
+                </div>
+
+                <div class="slide">
+                    <!--карточка продукта-->
+                    <div class="card-product">
+                        <span class="hit">хит</span>
+                        <a href="#" class="image"><img src="img/product.png" alt=""></a>
+                        <a href="#" class="title">Бокс Terra-drive 420</a>
+                        <div class="card-characteristics">
+                            152x100x43 см
+                        </div>
+                        <div class="card-description">
+                            Правосторонний тип открывания створки поворотно-откидной
+                        </div>
+                        <div class="card__bottom">
+                            <div class="price-wrapper">
+                                <p>Цена</p>
+                                <div class="price">
+                                    4 199 <sup>UA</sup>
+                                </div>
+                            </div>
+                            <a href="#" class="compare-icon"><img src="img/compare-icon.png" alt=""></a>
+                            <a href="#" class="btn-accent">В корзину</a>
+                        </div>
+                    </div>
+                    <!--карточка продукта end-->
+                </div>
+
+                <div class="slide">
+                    <!--карточка продукта-->
+                    <div class="card-product">
+                        <a href="#" class="image"><img src="img/product.png" alt=""></a>
+                        <a href="#" class="title">Бокс Terra-drive 420</a>
+                        <div class="card-characteristics">
+                            152x100x43 см
+                        </div>
+                        <div class="card-description">
+                            Правосторонний тип открывания створки поворотно-откидной
+                        </div>
+                        <div class="card__bottom">
+                            <div class="price-wrapper">
+                                <p>Цена</p>
+                                <div class="price">
+                                    4 199 <sup>UA</sup>
+                                </div>
+                            </div>
+                            <a href="#" class="compare-icon"><img src="img/compare-icon.png" alt=""></a>
+                            <a href="#" class="btn-accent">В корзину</a>
+                        </div>
+                    </div>
+                    <!--карточка продукта end-->
+                </div>
+
+                <div class="slide">
+                    <!--карточка продукта-->
+                    <div class="card-product">
+                        <a href="#" class="image"><img src="img/product.png" alt=""></a>
+                        <a href="#" class="title">Бокс Terra-drive 420</a>
+                        <div class="card-characteristics">
+                            152x100x43 см
+                        </div>
+                        <div class="card-description">
+                            Правосторонний тип открывания створки поворотно-откидной
+                        </div>
+                        <div class="card__bottom">
+                            <div class="price-wrapper">
+                                <p>Цена</p>
+                                <div class="price">
+                                    4 199 <sup>UA</sup>
+                                </div>
+                            </div>
+                            <a href="#" class="compare-icon"><img src="img/compare-icon.png" alt=""></a>
+                            <a href="#" class="btn-accent">В корзину</a>
+                        </div>
+                    </div>
+                    <!--карточка продукта end-->
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--слайдер популярные товары end-->
+
+
+    <!--section banner mini. banner sale + banner popular -->
+    <section class="banner">
+        <div class="container">
+            <a href="#" class="min-banner banner-sale">
+                <span class="amount-discount">25%</span>
+                <div class="block-right">
+                    <h3>Скидки нашим <strong>Клиентам</strong></h3>
+                    <p>Найдите отличный багажник для вашего нового автомобиля</p>
+                </div>
+            </a>
+
+            <a href="#" class="min-banner banner-popular">
+                <div class="block-right">
+                    <h3>популярные
+                        <strong>Багажники</strong></h3>
+                    <p>Найдите отличный контент для вашего нового автомобиля</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!--section banner end-->
+
+
+    <!--фото галлерея-->
+    <section class="photo-gallery">
+        <div class="container">
+            <h2><span>Фото последних установок</span></h2>
+
+            <div class="photo-gallery__content photo-gallery__slider">
+                <div class="slide"><a href="img/photo1.png" data-fancybox="gallery" class="gallery-item"><img
+                        src="img/photo1.png" alt=""></a></div>
+                <div class="slide"><a href="img/photo2.png" data-fancybox="gallery" class="gallery-item"><img
+                        src="img/photo2.png" alt=""></a></div>
+                <div class="slide"><a href="img/photo3.png" data-fancybox="gallery" class="gallery-item"><img
+                        src="img/photo3.png" alt=""></a></div>
+                <div class="slide"><a href="img/photo4.png" data-fancybox="gallery" class="gallery-item"><img
+                        src="img/photo4.png" alt=""></a></div>
+                <div class="slide"><a href="img/photo1.png" data-fancybox="gallery" class="gallery-item"><img
+                        src="img/photo1.png" alt=""></a></div>
+            </div>
+        </div>
+    </section>
+    <!--фото галлерея end-->
+
+    <!--секция партнеры-->
+    <section class="partners">
+        <div class="container">
+            <h2><span>ЛОГОТИПЫ Партнеров</span></h2>
+
+            <div class="partners__content">
+                <a href="#"><img src="img/logo-parthner.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <!--секция партнеры-->
+</div>
+
+<!--подвал-->
+<footer>
+    <div class="container">
+        <a href="index.html" class="logo"><img src="img/logo-footer.png" alt=""></a>
+
+        <div class="box-text">
+            <p>Воспроизводимые на данном сайте
+               торговые марки используются с разрешения
+               правообладателя.</p>
+        </div>
+
+        <div class="box-text">
+            <p>Copyright <a href="index.html">carstyle.ua</a></p>
+            <p>Все права защищены © 2018</p>
+        </div>
+
+        <div class="item-social">
+            <p>Мы в соцсетях:</p>
+
+            <ul class="list-social list-group">
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!--подвал end-->
+
+<!--button modal popup-->
+<a href="#" class="btn-call-fixed"><span class="image"><img src="img/phone-fix.png" alt=""></span><span class="text">Перезвонить
+вам!</span></a>
+<!--button modal popup-->
+
+<!--overlay-->
+<div id="overlay"></div>
+<!--overlay-->
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/jquery.equalheights.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

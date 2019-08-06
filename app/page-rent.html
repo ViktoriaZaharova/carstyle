@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Carstyle</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<!--mobile menu-->
+<div id="mobile-menu">
+
+    <div class="mobile-menu__header">
+        <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+    </div>
+
+    <div class="mobile-menu__body">
+        <ul class="menu-product">
+            <li><a href="#">Багажники
+                            (поперечины)
+                            на крышу</a></li>
+            <li>
+                <a href="#">Грузовые
+                            боксы</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="#">На гладкую крышу</a></li>
+                    <li><a href="#">На крепежные места</a></li>
+                    <li><a href="#">На рейлинг (просветный)</a></li>
+                    <li><a href="#">На рейлинг (интегрированные)</a></li>
+                    <li><a href="#">На водостоки</a></li>
+                    <li><a href="#">Аксессуары</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Крепления
+                            для велосипедов</a></li>
+            <li><a href="#">Крепления
+                            для лыж и сноубордов,
+                            лодок и каяк</a></li>
+            <li><a href="#">Рюкзаки
+                            и сумки Thule</a></li>
+            <li><a href="#">Автоаксессуары</a></li>
+            <li><a href="#">Распродажа
+                            и б/у</a></li>
+        </ul>
+        <ul class="list-group main-menu__list-group">
+            <li class="list-group__item"><a class="list-group__item-links" href="#">О нас </a></li>
+            <li class="list-group__item active"><a class="list-group__item-links" href="#">Новости </a></li>
+            <li class="list-group__item"><a class="list-group__item-links" href="#">Оплата и
+                                                                                    доставка </a>
+            </li>
+            <li class="list-group__item"><a class="list-group__item-links" href="#">Контакты</a></li>
+        </ul>
+
+        <div class="item-city">
+            <label class="city-wrapper">
+                <select name="city" class="city-dropdown">
+                    <option value="Киев">Киев</option>
+                    <option value="Киев">Киев</option>
+                    <option value="Киев">Киев</option>
+                </select>
+                <span class="icon"><img src="img/arrow-bottom.png" alt=""></span>
+            </label>
+
+            <label class="city-wrapper">
+                <select name="language" class="language-dropdown">
+                    <option value="Киев">RU</option>
+                    <option value="Киев">UA</option>
+                </select>
+                <span class="icon"><img src="img/arrow-bottom.png" alt=""></span>
+            </label>
+        </div>
+    </div>
+
+</div>
+<!--mobile menu-->
+
+<!--шапка-->
+<header>
+
+    <div class="header__top">
+        <div class="container">
+
+            <div class="burger-menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
+            <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+            <!--основное меню-->
+            <nav class="main-menu">
+                <ul class="list-group main-menu__list-group">
+                    <li class="list-group__item header-box"><a class="list-group__item-links" href="#">О нас </a></li>
+                    <li class="list-group__item header-box active"><a class="list-group__item-links"
+                                                                      href="#">Новости </a></li>
+                    <li class="list-group__item header-box"><a class="list-group__item-links" href="#">Оплата и
+                                                                                                       доставка </a>
+                    </li>
+                    <li class="list-group__item header-box"><a class="list-group__item-links" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <!--основное меню-->
+
+
+            <!--выбор города-->
+            <div class="item-city header-box">
+                <span>Выбрать город</span>
+
+                <label class="city-wrapper">
+                    <select name="city" class="city-dropdown">
+                        <option value="Киев">Киев</option>
+                        <option value="Киев">Киев</option>
+                        <option value="Киев">Киев</option>
+                    </select>
+                    <span class="icon"><img src="img/arrow-bottom.png" alt=""></span>
+                </label>
+            </div>
+            <!--выбор города-->
+
+            <!--график работы-->
+            <ul class="list-group item-schedule header-box">
+                <li>Пн-Пт: 9-19</li>
+                <li>Сб: 10-15, Вс: вых</li>
+            </ul>
+            <!--график работы-->
+
+
+            <!--кнопка открыть контакты на мобильном-->
+            <div class="btn-mobile-phone">
+                <span class="icon">
+                    <?xml version="1.0" ?>
+                    <svg fill="none" height="24" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                         stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path
+                            d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </span>
+            </div>
+            <!--кнопка открыть контакты на мобильном-->
+
+            <!--телефоны-->
+            <ul class="list-group phone-group header-box">
+                <li><a href="tel:+380983050906" class="phone">
+                    <span class="icon"><img src="img/phone-icon.png" alt=""></span>
+                    (098) 305-09-06</a></li>
+                <li><a href="tel:+380635314630" class="phone">
+                    <span class="icon"><img src="img/phone-icon.png" alt=""></span>
+                    (063) 531-46-30 </a></li>
+                <li><a href="tel:+380501373331" class="phone">
+                    <span class="icon"><img src="img/phone-icon.png" alt=""></span>
+                    (050) 137-33-31</a></li>
+                <li><a href="tel:+380443837300" class="phone">
+                    <span class="icon"><img src="img/phone-icon.png" alt=""></span>
+                    (044) 383-73-00</a></li>
+            </ul>
+            <!--телефоны-->
+
+            <!--блок для мобильного-->
+            <div class="block-mobile">
+                <!--сравнение-->
+                <a href="#" class="compare header-box">
+                    <span class="box-total">14</span>
+                    <span class="icon"><img src="img/compare-icon.png" alt=""></span>
+                </a>
+                <!--сравнение-->
+
+                <!--корзина-->
+                <a href="#" class="basket header-box">
+                    <span class="box-total">6</span>
+                    <span class="icon"><img src="img/cart-icon.png" alt=""></span>
+                </a>
+                <!--корзина-->
+            </div>
+            <!--блок для мобильного-->
+
+            <!--язык-->
+            <ul class="list-group language-group">
+                <li class="active"><a href="#">Ru</a></li>
+                <li><a href="#">Ua</a></li>
+            </ul>
+            <!--язык-->
+
+        </div>
+    </div>
+
+    <!--меню категорий-->
+    <div class="header__menu">
+        <div class="container">
+            <ul class="menu-product">
+                <li><a href="#">Багажники
+                                (поперечины)
+                                на крышу</a></li>
+                <li>
+                    <a href="#">Грузовые
+                                боксы</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">На гладкую крышу</a></li>
+                        <li><a href="#">На крепежные места</a></li>
+                        <li><a href="#">На рейлинг (просветный)</a></li>
+                        <li><a href="#">На рейлинг (интегрированные)</a></li>
+                        <li><a href="#">На водостоки</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Крепления
+                                для велосипедов</a></li>
+                <li><a href="#">Крепления
+                                для лыж и сноубордов,
+                                лодок и каяк</a></li>
+                <li><a href="#">Рюкзаки
+                                и сумки Thule</a></li>
+                <li><a href="#">Автоаксессуары</a></li>
+                <li><a href="#">Распродажа
+                                и б/у</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!--меню категорий-->
+
+
+    <div class="header__bottom">
+        <div class="container">
+
+            <!--поиск-->
+            <form method="post" class="search header-box">
+                <label>
+                    <input type="text" name="search" placeholder="Поиск">
+                </label>
+                <button type="submit"><img src="img/search-icon.png" alt=""></button>
+            </form>
+            <!--поиск-->
+
+            <!--сравнение-->
+            <a href="#" class="compare header-box">
+                <span class="box-total">14</span>
+                <span class="icon"><img src="img/compare-icon.png" alt=""></span>
+            </a>
+            <!--сравнение-->
+
+            <!--корзина-->
+            <a href="#" class="basket header-box">
+                <span class="box-total">6</span>
+                <span class="icon"><img src="img/cart-icon.png" alt=""></span>
+            </a>
+            <!--корзина-->
+        </div>
+    </div>
+
+</header>
+<!--шапка end-->
+
+<div class="content">
+    <!--хлебные крошки-->
+    <div class="breadcrumbs-wrapper">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Главная</a></li>
+                <li><span>Аренда</span></li>
+            </ul>
+        </div>
+    </div>
+    <!--хлебные крошки-->
+
+    <div class="page-content">
+
+        <section class="news-page">
+            <div class="container">
+                <h2><span>Аренда</span></h2>
+
+                <div class="news-page__content">
+                    <div class="item-description">
+                        <p>Обращаем Ваше внимание, что в отличие от большинства компаний, которые предоставляют услуги
+                           проката, наша компания CarStyle устанавливает багажную систему Thule, это лучшая фирма в мире
+                           по безопасности и надежности на рынке автобагажников.</p>
+
+                        <p>Преимущество аренды багажника Thule перед всеми остальными производителями в том, что
+                           индивидуально для каждого автомобиля выпускается адаптер для идеальной установки багажной
+                           системы, чтобы исключить возможность повредить крышу или арки автомобиля при перевозке
+                           грузов.</p>
+
+                        <p> Кроме того, наши сотрудники бесплатно Вам все установят на ваш автомобиль и снимут после
+                            окончания срока аренды. Поэтому в поездке Вы будете абсолютно уверены, что у Вас все надежно
+                            установлено, ничего не слетит, а крыша и краска автомобиля будут без повреждений.</p>
+                    </div>
+
+                    <div class="date">
+                        С 01.11.2018 действуют новые цены на аренду оборудования CarStyle:
+                    </div>
+
+
+                    <div class="wrapper-row">
+                        <ul class="list-check">
+                            <li>Минимальный срок аренды - 3 суток;</li>
+                            <li>Стоимость аренды: от 45 грн/сутки велокрепление, от 50 грн/сутки лыжное крепление, от 75
+                                грн/сутки багажная система (поперечины с крепежами), от 65 грн/сутки боксы;
+                            </li>
+                            <li>Новинка: аренда велокрепления на фаркоп: навесные - от 60 грн/сутки, платформы - от 70
+                                грн/сутки (минимум 5 суток);
+                            </li>
+                            <li>При заказе комплекта багажник+велокрепление скидка на комплекте
+                                10 грн/сутки, багажник+бокс - 10 грн/сутки
+                                (учтено в калькуляторе);
+                            </li>
+                        </ul>
+                        <ul class="list-check">
+                            <li>При заказе более 20 суток дополнительная скидка 10%;</li>
+
+                            <li>На время аренды за оборудование оставляется денежный залог (багажник
+                                - от 2.000 грн, бокс - от 3.000 грн, велокрепление - от 1.500 грн, в зависимости
+                                от комплектации), в гривнах или в валюте;
+                            </li>
+
+                            <li>Можно взять в аренду бокс Terra Drive (белый глянец) или (черный глянец), обычно мы
+                                сдаем
+                                Терра
+                                Драйв серого или черного матового цвета. стоимость аренды - 100 грн/сутки, минимальный
+                                срок
+                                аренды 5 суток;
+                            </li>
+
+                            <li>Есть возможность взять в аренду импортные боксы (Thule, Hapro),
+                                стоимость аренды - 160 грн/сутки, минимальный срок аренды 5 суток;
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="item-description">
+                        <p>Цену аренды багажника, бокса, крепления вы можете узнать, рассчитав на нашем
+                           калькуляторе.</p>
+
+                        <p>Если вдруг поездка отменяется, но клиент вносил аванс, то магазин CarStyle удерживает себе
+                           100
+                           грн (при условии, что сообщили более чем за неделю), или 200 грн (если сообщили менее чем за
+                           неделю). Под каждого клиента резервируется оборудование, и очень часто отдельно именно для
+                           его
+                           автомобиля покупается монтажный комплект.</p>
+
+                        <p>Если вам нужно перевезти вещи с одного города в другой (например Киев-Днепр), чтобы не ехать
+                           назад с оборудованием, вы можете сдать его в нашем филиале. В таком случае к цене аренда
+                           добавляется 100 грн за пересылку оборудования Новой Почтой.</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--block calculate-->
+        <section class="calculate">
+            <div class="container">
+                <h2><span>Калькулятор стоимости аренды багажной системы</span></h2>
+                <div class="title-description">Выберите оборудование, которое Вам необходимо взять в прокат.</div>
+
+                <div class="calculate__content">
+
+                    <!--item calculate-->
+                    <div class="calculate__item">
+                        <div class="block-hover">
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <div class="image"><img src="img/product.png" alt=""></div>
+                            <h3>Багажник (поперечины)</h3>
+                            <label><input type="text" name="quantity" class="input-quantity" value="1"></label>
+
+                            <div class="additional-blocks__item">
+                                <label class="checkbox">
+                                    <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                    <span class="checkbox-custom"></span>
+                                </label>
+                                <div class="image"><img src="img/product.png" alt=""></div>
+                                <h3>Бокс Terra drive</h3>
+                            </div>
+                            <div class="additional-blocks__item">
+                                <label class="checkbox">
+                                    <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                    <span class="checkbox-custom"></span>
+                                </label>
+                                <div class="image"><img src="img/product.png" alt=""></div>
+                                <h3>Импортный бокс ( Thule,Hapro)</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--item calculate-->
+
+                    <!--item calculate-->
+                    <div class="calculate__item">
+                        <div class="block-hover">
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <div class="image"><img src="img/product.png" alt=""></div>
+                            <h3>Багажник (поперечины)</h3>
+                            <label><input type="text" name="quantity" class="input-quantity" value="1"></label>
+
+                            <div class="additional-blocks__item">
+                                <label class="checkbox">
+                                    <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                    <span class="checkbox-custom"></span>
+                                </label>
+                                <div class="image"><img src="img/product.png" alt=""></div>
+                                <h3>Бокс Terra drive</h3>
+                            </div>
+                            <div class="additional-blocks__item">
+                                <label class="checkbox">
+                                    <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                    <span class="checkbox-custom"></span>
+                                </label>
+                                <div class="image"><img src="img/product.png" alt=""></div>
+                                <h3>Импортный бокс ( Thule,Hapro)</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--item calculate-->
+
+                    <!--item calculate-->
+                    <div class="calculate__item">
+                        <div class="block-hover">
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <div class="image"><img src="img/product.png" alt=""></div>
+                            <h3>Багажник (поперечины)</h3>
+                            <label><input type="text" name="quantity" class="input-quantity" value="1"></label>
+
+                            <div class="additional-blocks__item">
+                                <label class="checkbox">
+                                    <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                    <span class="checkbox-custom"></span>
+                                </label>
+                                <div class="image"><img src="img/product.png" alt=""></div>
+                                <h3>Бокс Terra drive</h3>
+                            </div>
+                            <div class="additional-blocks__item">
+                                <label class="checkbox">
+                                    <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                    <span class="checkbox-custom"></span>
+                                </label>
+                                <div class="image"><img src="img/product.png" alt=""></div>
+                                <h3>Импортный бокс ( Thule,Hapro)</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--item calculate-->
+
+                    <!--item calculate-->
+                    <div class="calculate__item">
+                        <div class="block-hover">
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <div class="image"><img src="img/product.png" alt=""></div>
+                            <h3>Багажник (поперечины)</h3>
+                            <label><input type="text" name="quantity" class="input-quantity" value="1"></label>
+
+                            <div class="additional-blocks__item">
+                                <label class="checkbox">
+                                    <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                    <span class="checkbox-custom"></span>
+                                </label>
+                                <div class="image"><img src="img/product.png" alt=""></div>
+                                <h3>Бокс Terra drive</h3>
+                            </div>
+                            <div class="additional-blocks__item">
+                                <label class="checkbox">
+                                    <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                    <span class="checkbox-custom"></span>
+                                </label>
+                                <div class="image"><img src="img/product.png" alt=""></div>
+                                <h3>Импортный бокс ( Thule,Hapro)</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--item calculate-->
+
+                </div>
+
+                <div class="box-separate">
+                    <div class="lease-term">
+                        <h4>Срок аренды:</h4>
+                        <label><input type="text" class="input-quantity" value="1"></label>
+                        <h4>дней</h4>
+                    </div>
+                </div>
+
+                <div class="item-description description-lease-term">
+                    <p>День получения и возврата считается как 1 день. Минимальный срок аренды 3 дня.</p>
+                </div>
+
+            </div>
+        </section>
+        <!--block calculate-->
+
+        <section class="callback-calculate">
+            <div class="container">
+                <h2><span>Заявка на прокат (аренду) багажной системы</span></h2>
+                <div class="title-description">После просчета стоимости, для отправки заявки аренды багажника, бокса на
+                                               крышу, велокрепления, крепления для лыж и сноубордов, заполните
+                                               пожалуйста, форму
+                                               ниже и нажмите кнопку "Заказать"
+                </div>
+
+                <form method="post" class="form-rent form">
+                    <div class="wrapper-row">
+                        <label>
+                            <span>Дата начала аренды:</span>
+                            <input type="text" placeholder="Дата начала аренды:" name="date-rent">
+                        </label>
+
+                        <label>
+                            <span>Номер телефона (*):</span>
+                            <input type="text" placeholder="Номер телефона (*):" name="phone" required>
+                        </label>
+
+                        <label>
+                            <span>Ваше имя:	</span>
+                            <input type="text" placeholder="Ваше имя:" name="name">
+                        </label>
+
+                        <label>
+                            <span>Город:</span>
+                            <input type="text" placeholder="Город:" name="city">
+                        </label>
+                    </div>
+
+                    <div class="box-separate">
+                        <p>Для быстрого подбора багажника укажите следующие данные: марка, модель, год выпуска, тип кузова,
+                           тип крыши (гладкая, рейлинги, крепежные места).</p>
+                    </div>
+
+                    <div class="form-bottom">
+                        <button type="submit" class="btn-details">ЗАКАЗАТЬ</button>
+                        <label class="checkbox">
+                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">Я прочитал и согласен с <a href="#" class="btn-all">условиями проката</a></span>
+                        </label>
+                    </div>
+                </form>
+
+
+            </div>
+        </section>
+    </div>
+</div>
+
+<!--подвал-->
+<footer>
+    <div class="container">
+        <a href="index.html" class="logo"><img src="img/logo-footer.png" alt=""></a>
+
+        <div class="box-text">
+            <p>Воспроизводимые на данном сайте
+               торговые марки используются с разрешения
+               правообладателя.</p>
+        </div>
+
+        <div class="box-text">
+            <p>Copyright <a href="index.html">carstyle.ua</a></p>
+            <p>Все права защищены © 2018</p>
+        </div>
+
+        <div class="item-social">
+            <p>Мы в соцсетях:</p>
+
+            <ul class="list-social list-group">
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!--подвал end-->
+
+<!--button modal popup-->
+<a href="#" class="btn-call-fixed"><span class="image"><img src="img/phone-fix.png" alt=""></span><span class="text">Перезвонить
+вам!</span></a>
+<!--button modal popup-->
+
+<!--overlay-->
+<div id="overlay"></div>
+<!--overlay-->
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/jquery.equalheights.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

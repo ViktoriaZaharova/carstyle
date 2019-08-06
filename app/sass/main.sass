@@ -1,0 +1,3417 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  min-width: 320px
+  position: relative
+  line-height: normal
+  color: $menu-color
+  font:
+    size: 14px
+    family: 'Roboto', sans-serif
+  box-shadow: 0 0 10px 0 rgba(#333, .08) inset
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: url("../img/shine.png") no-repeat left center
+
+html, body
+  overflow-x: hidden
+
+
+//tag
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+input, textarea, select
+  outline: none
+  border: none
+    radius: 0
+  text-decoration: none
+  box-sizing: border-box
+  transition: .3s ease
+
+input
+  width: 100%
+
+strong
+  font-weight: bold
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s linear
+  outline: none
+
+h1
+  color: $menu-color
+  font:
+    weight: 900
+    size: 40px
+  letter-spacing: 0.2px
+
+h2
+  position: relative
+  color: $h2
+  font:
+    weight: 700
+    size: 22px
+  text-transform: uppercase
+  box-sizing: border-box
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  width: 100%
+  white-space: nowrap
+  margin: 0 0 33px 0
+  span
+    padding: 0 38px
+    box-sizing: border-box
+  &:before, &:after
+    content: ''
+    position: relative
+    display: inline-block
+    height: 1px
+    width: 100%
+    background: rgba(#000, .1)
+  &:after
+    left: 0
+  &:before
+    right: 0
+//tag end
+
+.date
+  margin: 13px 0
+  display: flex
+  flex-direction: row
+  align-items: center
+  color: $text-accent
+  font:
+    weight: 500
+    size: 12px
+  line-height: 20px
+  .fa
+    margin-right: 10px
+
+
+
+//button
+button
+  background: transparent
+  border: none
+    radius: 0
+  padding: 0
+  margin: 0
+  outline: none
+  transition: .3s ease
+  cursor: pointer
+
+.btn-accent
+  color: #282828
+  line-height: 16.07px
+  font:
+    size: 12px
+    weight: 700
+  letter-spacing: 0.06px
+  text-transform: uppercase
+  border: 1px solid #f07f54
+    radius: 3px
+  background: #ffffff
+  padding: 10px 12px
+  box-sizing: border-box
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  &:hover
+    border-color: $border-color2
+    color: #fff
+    background-color: $btn-bg
+
+.btn-details
+  background-color: $text-accent
+  border: none
+    radius: 3px
+  color: #fff
+  text-transform: none
+  display: flex
+  align-items: center
+  justify-content: center
+  font:
+    size: 13px
+    weight: 500
+  width: 109px
+  height: 37px
+  margin: 0 auto
+  text-align: center
+  &:hover
+    background: $name-product
+
+.btn-info
+  background-color: $text-accent
+  border: 1px solid $border-color2
+    radius: 3px
+  color: #fff
+  text-transform: uppercase
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font:
+    size: 13px
+    weight: 500
+  width: 140px
+  height: 37px
+  margin: 0 auto
+
+.btn-all
+  color: #f43543
+  text-decoration: underline
+  font:
+    weight: 700
+    size: 13px
+  margin-bottom: 16px
+
+.links-default
+  color: #828282
+  font-size: 14px
+  line-height: 18px
+
+.btn-clear
+  text-transform: none
+  font-weight: normal
+  align-items: center
+  margin: 0 0 70px
+  width: 100%
+  .icon
+    margin-right: 10px
+    line-height: 12px
+
+.btn-grey
+  background-color: rgba(#dddddd, .3)
+  color: #303030
+  font-size: 14px
+  border-radius: 3px
+  width: 100%
+  height: 44px
+  display: flex
+  align-items: center
+  justify-content: center
+  &:hover
+    background: $accent1
+    color: #ffffff
+
+.btn-active
+  border: 1px solid #e8e8e8
+  background: #ffffff
+  margin-bottom: 10px
+//button end
+
+
+
+//block
+.container
+  position: relative
+  margin: 0 auto
+  display: flex
+  flex-wrap: wrap
+  box-sizing: border-box
+  width: 1200px
+  padding: 0 15px
+
+.header-box
+  min-height: 46px
+  padding: 0 17px
+  display: flex
+  align-items: center
+  box-sizing: border-box
+  border:
+    right: 1px solid rgba($border-color1, .29)
+//block end
+
+//menu
+.main-menu
+  display: flex
+  flex-direction: row
+
+.main-menu__list-group
+  display: flex
+  flex-direction: row
+  align-items: center
+  li
+    a
+      text-transform: uppercase
+      color: $menu-color
+      font:
+        size: 13px
+      letter-spacing: 0.33px
+      &:hover
+        color: $text-accent
+  .active
+    a
+      font:
+        weight: 700
+      color: $text-accent
+
+.menu-product
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  width: 100%
+  li
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100%
+    padding: 13px 0
+    transition: .3s ease
+    position: relative
+    &:hover
+      background: $accent1
+      .dropdown-menu
+        opacity: 1
+        visibility: visible
+    &:first-child
+      flex: 0
+    &:nth-child(2)
+      min-width: 140px
+    &:last-child
+      a
+        border: none
+    a
+      color: #ffffff
+      font:
+        size: 13px
+        weight: 700
+      text-align: center
+      text-transform: uppercase
+      line-height: 16px
+      padding: 0 20px
+      box-sizing: border-box
+      height: 100%
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      border:
+        right: 1px solid rgba($border-color1, .29)
+    .dropdown-menu
+      top: 74px
+
+.dropdown-menu
+  position: absolute
+  box-shadow: 2px 2px 27px rgba(0, 0, 0, 0.35)
+  background-color: #f5f5f5
+  left: 0
+  top: 0
+  z-index: 2
+  min-width: 295px
+  opacity: 0
+  visibility: hidden
+  transition: .3s ease
+  li
+    padding: 0 15px
+    a
+      color: $dropdown-color
+      text-transform: none
+      letter-spacing: 0.08px
+      font:
+        weight: normal
+        size: 16px
+      text-align: left
+      justify-content: flex-start
+      align-items: flex-start
+      border:
+        right: none
+        bottom: 1px solid rgba($border-color1, .29)
+      padding: 18px 0 18px 11px
+      position: relative
+      &:before
+        content: '>'
+        position: absolute
+        left: 0
+        top: 20px
+        font-size: 7px
+    &:hover
+      a
+        color: #fff
+
+//menu end
+
+//city
+.item-city
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.city-wrapper
+  position: relative
+  .icon
+    position: absolute
+    right: -6px
+    top: 10px
+
+select
+  border: none
+  -moz-appearance: none
+  -webkit-appearance: none
+  background: transparent
+  color: $accent1
+  font:
+    weight: 500
+    size: 16px
+  cursor: pointer
+  letter-spacing: 0.08px
+  &:hover
+    color: $accent2
+//city end
+
+//schedule
+.item-schedule
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  li
+    color: $menu-color
+    letter-spacing: 0.07px
+    font:
+      size: 13px
+      weight: 700
+//schedule end
+
+//phone
+.phone-group
+  column-count: 2
+  display: block
+  border-right: none
+  li
+    display: block
+    a
+      color: $menu-color
+      font:
+        size: 14px
+      letter-spacing: 0.14px
+      display: flex
+      flex-direction: row
+      align-items: center
+      .icon
+        margin-right: 7px
+.phone
+  &:hover
+    color: $accent1
+//phone end
+
+//language-group
+.language-group
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 25px 15px
+  box-sizing: border-box
+  background: #f3f4f4
+  li
+    a
+      color: $menu-color
+      letter-spacing: 0.07px
+      font-size: 15px
+
+  .active
+    a
+      font-weight: 700
+      color: $accent1
+//language-group end
+
+//header__menu
+.header__menu
+  background: $accent2
+//header__menu end
+
+//search
+.search
+  position: relative
+  padding-left: 0
+  width: calc(100% - 125px)
+  button
+    position: absolute
+    left: 13px
+    top: 13px
+    width: 12px
+    height: 12px
+  label
+    width: 100%
+    height: 100%
+    display: block
+  input
+    height: 36px
+    cursor: pointer
+    font:
+      size: 13px
+      family: 'Roboto', sans-serif
+    color: $input-color
+    letter-spacing: 0.07px
+    box-sizing: border-box
+    border: 2px solid rgba($input-border, .03)
+      radius: 3px
+    background-color: rgba($input-bg, .03)
+    padding: 0 35px
+
+.form-search
+  width: 100%
+  button
+    display: flex
+    align-items: center
+    flex-direction: row
+    justify-content: center
+    left: auto
+    top: 0
+    right: 0
+    width: 106px
+    height: 100%
+    text-transform: uppercase
+    border:
+      left: 2px solid #e7e7e7
+    color: #515151
+    font-size: 12px
+    line-height: 18px
+    .icon
+      margin: 0 10px 0 0
+  label
+    width: 100%
+    input
+      border: 3px solid rgba(210, 210, 210, 0.56)
+      padding: 0 110px 0 20px
+      color: #515151
+      font:
+        style: italic
+        size: 12px
+      line-height: 18px
+      height: 48px
+//search end
+
+//basket
+.basket
+  border: none
+
+.basket, .compare
+  position: relative
+  .box-total
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #ffffff
+    font:
+      family: 'ProximaNova-Regular', sans-serif
+      size: 11px
+    letter-spacing: 0.06px
+    width: 16px
+    height: 16px
+    border-radius: 50%
+    background: $btn-bg
+    right: 10px
+    top: 0
+
+.compare
+  .box-total
+    right: 12px
+//basket end
+
+//social
+.item-social
+  display: flex
+  flex-direction: row
+  align-items: center
+  p
+    color: $menu-color
+    letter-spacing: 0.08px
+    font:
+      size: 16px
+      weight: 300
+  .list-social
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-left: 22px
+    li
+      padding-right: 25px
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        width: 4px
+        height: 4px
+        border-radius: 50%
+        right: 11px
+        top: 44%
+        background-color: rgba(#414042, .07)
+      &:last-child
+        padding: 0
+        &:before
+          display: none
+      a
+        width: 34px
+        height: 34px
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: rgba(#d2d2d2, .82)
+        color: #fff
+        font-size: 20px
+        &:hover
+          background: $accent1
+//social end
+
+
+
+//header
+header
+  display: flex
+  flex-direction: column
+  .header__top
+    .container
+      flex-direction: row
+      align-items: center
+  .header__bottom
+    background: #fff
+    .container
+      padding: 13px 15px
+    .header-box
+      padding: 0 15px
+      min-height: auto
+    .search
+      padding-left: 0
+//header end
+
+
+//main slider
+.main__slider
+  position: relative
+  .slide
+    min-height: 568px
+    padding-bottom: 50px
+    box-sizing: border-box
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -28px
+      height: 232px
+      width: 100%
+      background: url("../img/shadow.png") no-repeat center
+        size: contain
+    img
+      max-width: none
+      width: auto
+      height: 100%
+      margin: 0 auto
+  .container
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    flex-direction: column
+    align-items: flex-start
+    height: 100%
+    .text
+      max-width: 420px
+      padding-bottom: 60px
+      border-bottom: 2px solid rgba(#414042, .08)
+      margin: 200px 0 70px
+      p
+        margin: 13px 0 0 0
+        color: $menu-color
+        font-size: 18px
+        letter-spacing: 0.09px
+  .slick-dots
+    top: 146px
+  .slick-arrow
+    position: absolute
+    top: 40%
+    width: 52px
+    height: 52px
+    border-radius: 50%
+    z-index: 2
+    background-color: rgba(#ededed, .46)
+    &:before
+      font:
+        family: 'fontawesome'
+        size: 50px
+      letter-spacing: 0.3px
+      line-height: 50px
+      opacity: 1
+      height: 58px
+      color: $menu-color
+      transition: .3s ease
+    &:hover
+      background-color: rgba(#414042, .46)
+      &:before
+        color: #ffffff
+  .slick-next
+    right: 20px
+    &:before
+      content: '\f105'
+  .slick-prev
+    left: 20px
+    &:before
+      content: '\f104'
+//main slider end
+
+
+//slider
+.slick-dots
+  position: absolute
+  width: 1200px
+  bottom: auto
+  height: auto
+  padding: 0 15px
+  box-sizing: border-box
+  margin: 0 auto
+  left: 0
+  right: 0
+  text-align: left
+  li
+    margin: 0 4px
+    width: 12px
+    height: 12px
+    box-sizing: border-box
+    border: 2px solid #c6c4c4
+      radius: 50%
+    button
+      display: none
+  .slick-active
+    border-color: $accent1
+    background: $accent1
+
+.slide
+  outline: none
+
+.slick-arrow
+  position: absolute
+  top: 30%
+  opacity: 0.33
+  font-size: -42px
+  z-index: 2
+  height: auto
+  cursor: pointer
+  &:before
+    font:
+      family: 'fontawesome', sans-serif
+      weight: 300
+      size: 42px
+    letter-spacing: 0.3px
+    line-height: 28px
+    color: #333333
+    transition: .3s ease
+  &:hover
+    opacity: 1
+    &:before
+      color: $btn-bg
+
+.slick-next
+  right: 0
+  &:before
+    content: '\f105'
+.slick-prev
+  left: 0
+  &:before
+    content: '\f104'
+//slider end
+
+
+//category-min
+.category-min
+  .container
+    justify-content: space-between
+    align-items: center
+    .item
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 275px
+      overflow: hidden
+      position: relative
+      transition: .3s ease
+      margin-bottom: 60px
+      &:hover
+        &:before
+          background-position: right center
+        .image
+          background-color: rgba($accent1, .7)
+          .text
+            opacity: 1
+            visibility: visible
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 180px
+        height: 38px
+        width: 100%
+        background: url("../img/shadow-category.png") no-repeat left center
+        z-index: -1
+      .image
+        width: 202px
+        height: 202px
+        border:
+          radius: 50%
+        overflow: hidden
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: rgba(#333333, .7)
+        img
+          height: 100%
+          max-width: none
+          width: auto
+          margin: 0 auto
+          z-index: -1
+        &:after
+          content: ''
+          position: absolute
+          left: 8px
+          right: 8px
+          top: 8px
+          bottom: 8px
+          width: 186px
+          height: 186px
+          border: 1px solid rgba(#ffffff, .27)
+            radius: 50%
+        .icon
+          position: absolute
+          display: block
+        .text
+          position: absolute
+          left: 0
+          right: 0
+          color: #ffffff
+          text-transform: uppercase
+          text-align: center
+          display: block
+          margin-top: 7px
+          font-size: 12px
+          opacity: 0
+          visibility: hidden
+          transition: .3s ease
+      h3
+        color: $subtitle
+        line-height: 22px
+        font:
+          size: 16px
+          weight: 700
+        text-transform: uppercase
+        text-align: center
+        margin: 25px auto 0
+        max-width: 200px
+      &:last-child
+        h3
+          max-width: 170px
+    .dots-arrow
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-bottom: 40px
+      span
+        width: 33px
+        height: 33px
+        border: 1px solid rgba($btn-bg, .33)
+          radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        color: rgba($subtitle, .38)
+        font:
+          size: 16px
+          weight: 100
+        text-transform: uppercase
+      &:before, &:after
+        content: '•••'
+        position: relative
+        margin: 0 15px 0 0
+        letter-spacing: 6px
+        color: rgba($subtitle, .38)
+        font-size: 16px
+      &:after
+        margin: 0 0 0 15px
+//category-min end
+
+
+//card-product
+.card-product
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 289px
+  background: #ffffff
+  box-sizing: border-box
+  padding: 8px 21px 28px 21px
+  border: 1px solid transparent
+  overflow: hidden
+  transition: .3s ease
+  cursor: pointer
+  margin: 0 auto 18px
+  text-align: center
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    height: calc(100% - 28px)
+    top: 8px
+    width: 1px
+    background: rgba(#878786, .1)
+    transition: .3s ease
+  .hit
+    top: 18px
+    left: 50px
+    width: auto
+    height: auto
+    padding: 0
+    text-align: right
+    position: absolute
+    color: $btn-bg
+    text-transform: uppercase
+    font:
+      size: 18px
+      family: "Roboto - Condensed", sans-serif
+      weight: normal
+    line-height: 16.07px
+    letter-spacing: 0.09px
+    background: transparent
+  &:hover
+    border-color: $accent1
+    &:before
+      display: none
+    .title
+      color: $accent1
+      text-decoration: underline
+    .btn-accent
+      border-color: $border-color2
+      background: $btn-bg
+      color: #ffffff
+  .image
+    width: 100%
+    height: 125px
+    margin: 50px 0 29px
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      margin: 0 auto
+  .title
+    color: $name-product
+    text-transform: uppercase
+    letter-spacing: 0.14px
+    line-height: 18px
+    font-weight: 700
+
+.card-characteristics
+  margin: 7px 0 12px
+  color: $color-characteristic
+  text-align: center
+  font:
+    weight: 700
+    size: 13px
+  line-height: 13px
+  letter-spacing: 0.07px
+.card-description
+  text-align: center
+  color: $color-description
+  font-size: 13px
+  letter-spacing: 0.07px
+  line-height: 13px
+.card__bottom
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  width: 100%
+  align-items: center
+  margin-top: 26px
+  .compare-icon
+    padding: 8px 11px
+    border:
+      left: 1px solid rgba($border-color1, .46)
+      right: 1px solid rgba($border-color1, .46)
+//card-product end
+
+//price-wrapper
+.price-wrapper
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  p
+    color: #939393
+    line-height: 16.07px
+    letter-spacing: 0.06px
+    font:
+      size: 12px
+      weight: 700
+  .price
+    color: $btn-bg
+    line-height: 16.07px
+    font:
+      weight: 700
+      size: 20px
+    text-transform: uppercase
+    letter-spacing: 0.1px
+  sup
+    text-transform: none
+    font-size: 14px
+    vertical-align: super
+
+//price-wrapper end
+
+//section popular
+.popular-product__content
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+//section popular end
+
+//section popular
+.popular-product__slider
+  width: 100%
+  margin: 0 auto
+//section popular end
+
+
+//banner
+.banner
+  .container
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding: 0 15px 40px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      margin: 0 auto
+      background: url("../img/shadow-banner.png") no-repeat center
+      width: 100%
+      height: 41px
+    .min-banner
+      width: 50%
+      padding: 46px 58px
+      box-sizing: border-box
+      color: #ffffff
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      .block-right
+        max-width: 260px
+        padding-left: 38px
+      .amount-discount
+        letter-spacing: 0.44px
+        text-transform: uppercase
+        font:
+          size: 88px
+          family: 'ProximaNova-Regular', sans-serif
+          weight: 700
+        padding-right: 38px
+        line-height: 88px
+        border:
+          right: 1px solid rgba(#fff, .25)
+      h3
+        text-transform: uppercase
+        font:
+          size: 26px
+          weight: 300
+          family: 'ProximaNova-Light', sans-serif
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        line-height: 28px
+        letter-spacing: 0.13px
+        strong
+          font:
+            family: 'ProximaNova-Regular', sans-serif
+            weight: 700
+      p
+        letter-spacing: 0.07px
+        font:
+          size: 14px
+          family: 'ProximaNova-Regular', sans-serif
+    .banner-sale
+      background: url("../img/bg-banner1.png") no-repeat center
+        size: cover
+    .banner-popular
+      background: url("../img/bg-banner2.png") no-repeat center
+        size: cover
+      .block-right
+        margin-left: auto
+
+//banner end
+
+//photo gallery
+.photo-gallery__slider
+  width: 100%
+  .slick-arrow
+    top: 40%
+  .slick-next
+    right: -20px
+  .slick-prev
+    left: -20px
+
+.gallery-item
+  margin-bottom: 55px
+  img
+    margin: 0 auto
+//photo gallery end
+
+//partners
+.partners
+  .partners__content
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    width: 100%
+    a
+      margin: 0 auto 8px
+
+//partners end
+
+
+//footer
+footer
+  position: relative
+  background: $accent2
+  margin: 25px 0 0 0
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    top: 0
+    background: url("../img/bg-footer.png") no-repeat left bottom
+      size: cover
+    width: 100%
+    height: 100%
+    opacity: 0.06
+  .container
+    color: #ffffff
+    line-height: 18px
+    font-size: 13px
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    padding: 35px 15px 40px
+    box-sizing: border-box
+    .box-text
+      max-width: 280px
+      a
+        color: #ffffff
+        display: inline
+    .item-social
+      p
+        color: #ffffff
+      .list-social
+        li
+          &:before
+            background-color: #414142
+          a
+            background: #7e7e7e
+            &:hover
+              background: $accent1
+//footer end
+
+
+//breadcrumbs
+.breadcrumbs-wrapper
+  .container
+    flex-direction: row
+    align-items: center
+
+    .breadcrumbs
+      display: flex
+      flex-direction: row
+      align-items: center
+      flex-wrap: wrap
+      padding: 19px 0
+      box-sizing: border-box
+      border-top: 1px solid rgba(0, 0, 0, 0.1)
+      width: 100%
+      li
+        font:
+          size: 12px
+        line-height: 18px
+        &:first-child
+          a
+            padding-left: 0
+        a
+          color: #ababab
+          padding: 0 18px 0 8px
+          box-sizing: border-box
+          position: relative
+          &:before
+            content: '\f178'
+            position: absolute
+            right: 0
+            top: 2px
+            color: $accent1
+            font-family: 'fontawesome', sans-serif
+        span
+          color: #313131
+          padding-left: 8px
+
+//breadcrumb end
+
+
+//pagination
+.pagination
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  margin: 40px auto
+  li
+    display: flex
+    align-items: center
+    justify-content: center
+    a
+      color: #2a2a2a
+      letter-spacing: 3.9px
+      text-transform: uppercase
+      width: 22px
+      height: 22px
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      font:
+        size: 13px
+        weight: 700
+  .active
+    a
+      color: #fffefe
+      background: $accent1
+
+  .arrow-pagination
+    a
+      letter-spacing: 5.4px
+      color: #a3a3a3
+      font-size: 18px
+//pagination end
+
+//news
+.news__item
+  display: flex
+  flex-direction: column
+  width: 362px
+  color: #303030
+  .news__item-image
+    width: 100%
+    height: 219px
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0 19px 0
+    transition: .3s ease
+    position: relative
+    .btn-details
+      position: absolute
+      left: 0
+      right: 0
+      top: 45%
+      opacity: 0
+      visibility: hidden
+      transition: .3s ease
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(12, 12, 12, 0.83)
+      transition: .3s ease
+      opacity: 0
+      visibility: hidden
+    &:hover
+      &:before
+        opacity: 1
+        visibility: visible
+      .btn-details
+        opacity: 1
+        visibility: visible
+    img
+      width: 100%
+      height: 100%
+      max-width: none
+  .news__item-title
+    color: #303030
+    font:
+      weight: 700
+    line-height: 18px
+
+.item-description
+  line-height: 20px
+
+.news__content
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 100%
+  li
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    width: 33.3%
+    border:
+      right: 1px solid rgba(#b04db0, .1)
+
+    &:last-child
+      border: none
+      .news__item
+        padding-right: 0
+    .news__item
+      width: auto
+      flex: 1
+      padding: 35px 19px
+      border:
+        bottom: 1px solid rgba(#b04db0, .1)
+      &:first-child
+        padding-top: 0
+      &:last-child
+        padding-bottom: 0
+        border:
+          bottom: none
+
+//news end
+
+//страница новости
+.news-page__content
+  display: flex
+  flex-direction: column
+  .image
+    width: 100%
+    max-height: 334px
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+  .date
+    margin: 20px 0
+
+.item-description
+  p
+    margin-bottom: 20px
+//страница новости end
+
+
+//кнопка заказать звонок фикс
+.btn-call-fixed
+  position: fixed
+  z-index: 10
+  right: 30px
+  top: 50%
+  display: flex
+  flex-direction: column
+  align-items: center
+  color: #ffffff
+  text-align: center
+  max-width: 98px
+  letter-spacing: 0.08px
+  font-size: 16px
+  .image
+    width: 68px
+    height: 68px
+    border-radius: 50%
+    background-color: $accent1
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 15px
+//кнопка заказать звонок фикс end
+
+
+//mobile-menu
+#mobile-menu
+  position: fixed
+  left: -100%
+  top: 0
+  width: 270px
+  height: 100%
+  background: $accent2
+  color: #fff
+  padding: 0 0 20px 0
+  box-sizing: border-box
+  z-index: 15
+  .mobile-menu__header
+    border-bottom: 1px solid rgba(189, 190, 192, 0.29)
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    padding: 10px 20px
+    .close
+      cursor: pointer
+      transition: .3s ease
+      z-index: 2
+      display: flex
+      &:hover
+        color: $accent1
+    .logo
+      width: 70px
+  .mobile-menu__body
+    overflow-y: scroll
+    height: 100%
+    padding-bottom: 20px
+    box-sizing: border-box
+    .main-menu__list-group
+      flex-direction: column
+      align-items: flex-start
+      margin-bottom: 10px
+      border-bottom: 1px solid rgba(189, 190, 192, 0.29)
+      li
+        width: 100%
+        a
+          width: 100%
+          padding: 7px 20px
+          color: #ffffff
+      .active
+        a
+          color: $accent1
+    .menu-product
+      flex-direction: column
+      justify-content: flex-start
+      margin-bottom: 10px
+      border-bottom: 1px solid rgba(189, 190, 192, 0.29)
+      li
+        width: 100%
+        justify-content: flex-start
+        .dropdown-menu
+          top: 42px
+          min-width: 100%
+          li
+            padding: 0
+            a
+              padding: 10px 10px 10px 20px
+              &:before
+                left: 10px
+                top: 11px
+        a
+          border: none
+          text-align: left
+          justify-content: flex-start
+    .item-city
+      padding: 10px 20px
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: space-around
+      select:hover
+        color: #ffffff
+
+.burger-menu
+  display: none
+
+#overlay
+  background: rgba(#e1e1e1,.9)
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: 6
+  display: none
+
+.btn-mobile-phone, .block-mobile, .btn-filter-mobile
+  display: none
+//mobile-menu end
+
+
+//выбор параметров
+.selection-page
+  margin-bottom: 40px
+.selection-page__recruitment
+  margin: 40px 0
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+
+.recruitment-item
+  width: 366px
+  h3
+    text-transform: uppercase
+    color: #303030
+    font:
+      weight: 700
+    line-height: 20px
+    margin-bottom: 15px
+
+.select-box
+  position: relative
+  cursor: pointer
+  .btn-dropdown-menu
+    border: 1px solid #dddddd
+      radius: 3px
+    padding: 11px 19px
+    box-sizing: border-box
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    .icon
+      color: $accent1
+      line-height: 20px
+      transition: .3s ease
+  .in
+    .icon
+      transform: rotate(180deg)
+
+.dropdown-options
+  display: none
+  opacity: 1
+  visibility: visible
+  top: 44px
+  width: 100%
+  max-width: none
+  min-width: auto
+  box-shadow: none
+  padding: 15px
+  transition: none
+  ul
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: flex-start
+    align-items: center
+    li
+      padding: 0
+      width: auto
+      margin: 5px 20px
+      a
+        width: auto
+        padding: 0
+        border: none
+
+        font-size: 11px
+        &:before
+          display: none
+        &:hover
+          color: $accent1
+
+
+//выбор параметров end
+
+//количество товаров на странице
+.products-per-page
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  width: 100%
+  p
+    color: $h2
+    line-height: 18px
+    margin-right: 14px
+
+.list-products
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  li
+    a
+      width: 27px
+      height: 27px
+      display: flex
+      align-items: center
+      justify-content: center
+      color: $h2
+  .active
+    a
+      background-color: #f43543
+      border-radius: 3px
+      color: #ffffff
+//количество товаров на странице end
+
+//результат выбора
+.result-selection__product
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+  align-items: flex-start
+  width: 100%
+  margin: 23px 0 0 0
+  .card-product
+    width: 292px
+    margin-bottom: 27px
+    padding: 8px 21px 39px 21px
+    &:nth-child(4n)
+      &:before
+        display: none
+    .card-characteristics
+      margin-bottom: 0
+//результат выбора end
+
+//search-section
+.search-section
+  margin: 0 0 15px 0
+//search-section end
+
+//catalog-page__content
+.catalog-page__content
+  width: calc(100% - 270px)
+  .pagination
+    margin-top: 0
+//catalog-page__content end
+
+
+//sidebar
+.sidebar
+  width: 250px
+//sidebar end
+
+
+//catalog-page
+.catalog-page
+  .container
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: flex-start
+//catalog-page end
+
+
+//catalog-gallery
+.catalog-gallery
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: flex-start
+  flex-wrap: wrap
+//catalog-gallery end
+
+
+
+
+//галерея фото работ block
+.catalog-gallery__item
+  display: flex
+  flex-direction: column
+  position: relative
+  margin-bottom: 14px
+  width: 293px
+  height: 182px
+  .image
+    position: relative
+    width: 100%
+    height: 182px
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      height: 100%
+      width: auto
+      max-width: none
+      flex: 1
+
+  &:hover
+    .block-hover
+      border-color: $accent1
+      z-index: 2
+      box-shadow: 2px 2px 29px rgba(0, 0, 0, 0.21)
+    .catalog-gallery__item-description
+      display: block
+
+.block-hover
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: auto
+  box-sizing: border-box
+  color: $color-description
+  border: 1px solid transparent
+  transition: .3s ease
+  background: transparent
+  h4
+    line-height: 13px
+    letter-spacing: 0.07px
+    font:
+      weight: 700
+      size: 13px
+
+.catalog-gallery__item-description
+  background: rgba(#fff, .92)
+  padding: 17px 24px
+  box-shadow: 2px 2px 29px rgba(0, 0, 0, 0.21)
+  display: none
+  transition: .4s ease
+  z-index: 10
+
+.list-price
+  display: flex
+  flex-direction: column
+  li
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    width: 100%
+    align-items: center
+    padding: 10px 0
+    border-bottom: 1px solid #e6e6e6
+    letter-spacing: 0.07px
+    font-size: 13px
+    &:last-child
+      border-bottom: none
+  .price
+    color: #f04751
+    font:
+      weight: 700
+      size: 14px
+    sup
+      vertical-align: super
+      font-size: 10px
+      line-height: 10px
+.car-brand, .hit
+  position: absolute
+  top: 6px
+  right: 9px
+  color: #ffffff
+  text-transform: uppercase
+  line-height: 18px
+  font:
+    weight: 700
+    size: 15px
+  background-color: #f43543
+  padding: 8px 11px
+  box-sizing: border-box
+  z-index: 1
+//галерея фото работ block end
+
+
+
+//filter
+.sidebar
+  display: flex
+  flex-direction: column
+  .box
+    border: 1px solid #e6e6e6
+      radius: 3px
+    background-color: #fbfbfb
+    margin-bottom: 13px
+    padding: 16px 20px 0
+    box-sizing: border-box
+    .btn-details
+      width: 100%
+      height: 39px
+      margin-bottom: 15px
+      text-transform: uppercase
+      font-size: 13px
+      letter-spacing: 0
+    .btn-accent
+      height: 39px
+      margin-bottom: 15px
+    .box-hover
+      display: none
+    h3
+      color: #050505
+      line-height: 22px
+      text-transform: uppercase
+      font:
+        size: 13px
+        weight: 700
+    .filter-box__title
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      position: relative
+      margin-bottom: 15px
+      cursor: pointer
+      &:before
+        content: '+'
+        position: absolute
+        right: 0
+        top: 0
+        width: 18px
+        height: 18px
+        border: 1px solid #f43744
+          radius: 3px
+        color: #ffffff
+        background: $text-accent
+        display: flex
+        align-items: center
+        justify-content: center
+    .in
+      &:before
+        content: '-'
+        color: $text-accent
+        background: #fff
+    &:last-child
+      margin: 0
+  .filter-box__price
+    padding-bottom: 20px
+    border:
+      bottom: 1px solid rgba(#cbcbcb, .34)
+    h3
+      text-transform: none
+  .additional-filter
+    padding: 15px 0 0
+    border:
+      bottom: 1px solid rgba(#cbcbcb, .34)
+    &:last-child
+      border: none
+
+
+.filter-list
+  display: flex
+  flex-direction: column
+  li
+    margin-bottom: 20px
+    color: #464646
+    font:
+      size: 13px
+      weight: 700
+      family: 'Roboto', sans-serif
+
+    .icon
+      min-width: 55px
+      opacity: .5
+    sup
+      vertical-align: super
+      font-size: 11px
+      color: #f43543
+  .active
+    .label
+      color: #f43543
+    .icon
+      opacity: 1
+
+.list-car-model
+  li
+    &:nth-child(8) ~ li
+      display: none
+//filter end
+
+
+//checkbox
+.checkbox
+  margin-bottom: 10px
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: flex-start
+  &:last-child
+    margin-bottom: 0
+  .checkbox-inp
+    display: none
+  .checkbox-custom
+    position: relative
+    width: 9px
+    height: 9px
+    display: inline-block
+    vertical-align: middle
+    border: 1px solid #bfbfbf
+    background: #ffffff
+    cursor: pointer
+    transition: .3s ease
+    margin-right: 12px
+  .label
+    display: inline-block
+    vertical-align: middle
+    cursor: pointer
+  .checkbox-inp:checked + .checkbox-custom
+    &::before
+      content: "\f00c"
+      display: block
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      margin: 0 auto
+      width: 100%
+      height: 100%
+      font-size: 7px
+      color: $accent1
+      font-family: 'fontawesome', sans-serif
+//checkbox end
+
+
+
+//image-slider
+.product-image__slider
+  max-width: 490px
+  margin: 30px auto
+  .item
+    border: 1px solid rgba(#000000, .07)
+    width: 151px
+    height: 102px
+    background-color: #fff
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto
+    cursor: pointer
+    overflow: hidden
+    padding: 15px
+    box-sizing: border-box
+  .slick-arrow
+    top: 50%
+    opacity: 1
+    &:before
+      font-size: 27px
+  .slick-next
+    right: -20px
+  .slick-prev
+    left: -20px
+  .slick-current
+    img, p, span
+      opacity: .21
+
+.block-video
+  flex-direction: column
+  color: #343434
+  font:
+    weight: 500
+    size: 13px
+  line-height: 14.53px
+  .icon
+    font-size: 26px
+    color: $accent1
+//image-slider end
+
+//product image
+.product-image__max
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+.product-image
+  position: relative
+  .hit
+    position: absolute
+    font:
+      size: 16px
+      weight: 700
+    line-height: 16.07px
+    letter-spacing: 0.08px
+    padding: 15px 10px
+    background: $accent1
+    color: #fff
+    top: 0
+    left: 0
+    display: table
+
+//product image end
+
+
+//installation-card
+.installation-card
+  width: 100%
+//installation-card end
+
+//section complete
+.complete-set__content
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+//section complete end
+
+//карточка комплектации
+.complete-card, .product-description
+  width: 577px
+  border: 1px solid #cfcfcf
+  position: relative
+  box-sizing: border-box
+  padding: 44px 22px 36px
+  display: flex
+  flex-direction: column
+  margin: 0 0 20px 0
+  .hit
+    background: $accent1
+    color: #ffffff
+    text-transform: uppercase
+    letter-spacing: 0.08px
+    font-size: 16px
+    padding: 17px 12px
+    box-sizing: border-box
+    top: 10px
+    left: 7px
+    position: absolute
+    width: auto
+    display: table
+  .product-image__slider
+    margin: 10px auto 40px
+  .title
+    color: #3d3d3d
+    text-transform: uppercase
+    font:
+      size: 24px
+      weight: 900
+    text-align: center
+  .card-line
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    .compare-icon
+      display: flex
+      flex-direction: row
+      align-items: center
+      color: #343434
+      font:
+        weight: 500
+        size: 16px
+      .icon
+        margin-right: 20px
+  .card-characteristics
+    margin: 17px 0 25px
+  .card__bottom
+    padding: 25px 0 0 0
+    border:
+      top: 1px solid #eaeaea
+  .price
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: flex-end
+    color: #050505
+    font-size: 28px
+    text-transform: uppercase
+    line-height: 20px
+    sup
+      font-size: 12px
+  .one-click
+    height: 53px
+    width: 175px
+    border-radius: 6px
+    font-size: 13px
+    margin: 0 13px 0 auto
+  .btn-details
+    border: none
+    height: 53px
+    width: 195px
+    text-transform: uppercase
+    font-size: 13px
+    margin: 0
+
+.old-price
+  color: #949494
+  text-decoration: line-through
+  font-size: 16px
+  line-height: 16px
+
+sup
+  vertical-align: super
+//карточка комплектации end
+
+//выбор цвета
+.color-selection
+  display: flex
+  flex-direction: row
+  align-items: center
+  p
+    color: #494949
+    font-size: 15px
+    margin-right: 20px
+
+.color-list
+  display: flex
+  flex-direction: row
+  align-items: center
+  .color-list__item.active
+    a
+      border-color: $accent1
+  .color-list__item
+    margin-right: 6px
+    a
+      display: block
+      width: 28px
+      height: 28px
+      box-sizing: border-box
+      border: 1px solid transparent
+        radius: 50%
+    &:last-child
+      margin: 0
+
+.black-color
+  background: #000
+  width: 28px
+  height: 28px
+  border-radius: 50%
+.white-color
+  background: #ffffff
+  width: 28px
+  height: 28px
+  border-radius: 50%
+.red-color
+  background: $accent1
+  width: 28px
+  height: 28px
+  border-radius: 50%
+.grey-color
+  background: #e4e4e4
+  width: 28px
+  height: 28px
+  border-radius: 50%
+//выбор цвета end
+
+
+//list-check
+.list-check
+  width: 45%
+  li
+    position: relative
+    color: #303030
+    margin-bottom: 15px
+    padding-left: 20px
+    &:before
+      content: '\f058'
+      position: absolute
+      left: 0
+      top: 3px
+      font-family: 'fontawesome', sans-serif
+      color: $accent1
+
+.wrapper-row
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+  align-items: flex-start
+  margin-bottom: 30px
+//list-check end
+
+//section calculate
+.calculate
+  margin: 50px 0
+  .container
+    h2
+      margin-bottom: 16px
+
+.title-description
+  width: 100%
+  text-align: center
+
+.calculate__content
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 38px 0 0 0
+//section calculate end
+
+
+//calculate__item
+.calculate__item
+  width: 292px
+  height: 300px
+  position: relative
+  cursor: pointer
+  border:
+    right: 1px solid #c6c6c6
+  margin: 0 0 50px
+  &:last-child
+    border: none
+  h3
+    text-align: center
+    color: $name-product
+    text-transform: uppercase
+    letter-spacing: 0.14px
+    font:
+      size: 14px
+      weight: 700
+  .image
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 149px
+  .block-hover
+    background: #ffffff
+    padding: 23px 20px
+    box-sizing: border-box
+  .checkbox
+    .checkbox-custom
+      margin: 0
+      width: 21px
+      height: 22px
+      border: 1px solid #c6c6c6
+        radius: 3px
+    .checkbox-inp:checked + .checkbox-custom
+      &::before
+        font-size: 16px
+        top: 1px
+        left: 1px
+  &:hover
+    .block-hover
+      border-color: $accent1
+      z-index: 2
+    .additional-blocks__item
+      display: flex
+
+
+.additional-blocks__item
+  display: none
+  flex-direction: column
+  z-index: 10
+  transition: .4s ease
+  padding: 17px 0 0 0
+  border:
+    top: 1px solid #c6c6c6
+  margin: 27px 0 0 0
+//calculate__item end
+
+//input
+.input-quantity
+  cursor: pointer
+  width: 84px
+  height: 37px
+  border: 1px solid $accent1
+    radius: 3px
+  background: #ffffff
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 20px auto 0
+  text-align: center
+  padding: 0 10px
+  box-sizing: border-box
+  color: #363636
+  font:
+    weight: 700
+    size: 12px
+  letter-spacing: 0.06px
+//input
+
+//box-separate
+.box-separate
+  width: 100%
+  border: 1px solid #d1d1d1
+    radius: 3px
+  padding: 20px
+  margin: 19px 0
+
+.lease-term
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  h4
+    color: $name-product
+    text-transform: uppercase
+    letter-spacing: 0.14px
+    font:
+      weight: 700
+      size: 14px
+  label
+    margin: 0 25px
+    input
+      margin: 0
+
+.description-lease-term
+  text-align: center
+  width: 100%
+//box-separate end
+
+//form-rent
+.form-rent
+  width: 100%
+  margin: 39px 0 0 0
+  .wrapper-row
+    label
+      display: flex
+      flex-direction: column
+      span
+        color: #303030
+        font-size: 14px
+        margin: 0 0 15px 0
+      input
+        border: 1px solid #c6c6c6
+          radius: 3px
+        height: 42px
+        padding: 0 25px
+        width: 277px
+        color: #303030
+        &::placeholder
+          color: #303030
+  .form-bottom
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    align-items: center
+    flex-wrap: wrap
+    padding: 0 160px 0 0
+    .checkbox-custom
+      width: 21px
+      height: 22px
+      border: 1px solid #c6c6c6
+        radius: 3px
+      margin: 0 10px 0 0
+    .checkbox-inp:checked + .checkbox-custom
+      &::before
+        font-size: 16px
+        top: 1px
+        left: 1px
+    .checkbox
+      width: auto
+      a
+        display: inline
+        font-weight: normal
+    .btn-details
+      margin: 0 26px 0 0
+
+//form-rent end
+
+//about-page
+.about-page__content
+  width: 100%
+  .wrapper-row
+    width: 100%
+    justify-content: space-between
+    .certificate-box
+      width: 541px
+    .video-description, .warranty-box
+      max-width: 585px
+      p
+        margin-bottom: 20px
+
+    .item-description
+      max-width: 700px
+    h3
+      text-transform: uppercase
+      color: #252525
+      font:
+        size: 16px
+        weight: 700
+      margin-bottom: 20px
+      width: 100%
+    .box-video
+      width: 541px
+      height: 288px
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: center
+      overflow: hidden
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background: rgba(#000,.4)
+      .icon
+        position: absolute
+        z-index: 1
+        display: flex
+        align-items: center
+        justify-content: center
+      .image
+        height: 100%
+        width: 100%
+        img
+          height: 100%
+          max-width: none
+
+//about-page end
+
+//gallery-certificate
+.gallery-certificate
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: flex-start
+  .image
+    display: flex
+    flex-direction: row
+    .gallery-item
+      width: 175px
+  .text
+    max-width: 170px
+    ul
+      li
+        text-transform: uppercase
+        color: #252525
+        font-size: 14px
+        margin-bottom: 15px
+    .btn-details
+      width: 100%
+
+//gallery-certificate end
+
+//section advantages
+.advantages-scheme
+  display: flex
+  flex-direction: row
+  justify-content: center
+  flex-wrap: wrap
+  width: 100%
+  position: relative
+  margin: 0 0 55px 0
+  .box
+    color: #333333
+    line-height: 18px
+    max-width: 385px
+    position: absolute
+    .number
+      margin: 27px 0 0 0
+      color: #f43745
+      font-size: 32px
+      line-height: 34px
+      text-align: center
+  .box1
+    text-align: center
+    margin: 0 auto
+    max-width: none
+    width: 100%
+    position: relative
+    p
+      max-width: 360px
+      margin: 0 auto
+  .box2, .box3, .box4
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    justify-content: space-between
+    .number
+      margin: 0 27px 0 0
+  .box5
+    width: 100%
+    max-width: none
+    text-align: center
+    position: relative
+    p
+      max-width: 300px
+      margin: 0 auto
+    .number
+      margin: 0 0 27px 0
+  .box6, .box7, .box8
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    .number
+      margin: 0 0 0 27px
+    p
+      text-align: right
+  .box2
+    right: 2%
+    top: 22%
+  .box3
+    top: 45%
+    right: 3%
+    max-width: 300px
+  .box4
+    bottom: 20%
+    right: 3%
+    max-width: 350px
+  .box6
+    bottom: 20%
+    left: 3%
+    max-width: 350px
+  .box7
+    top: 47%
+    left: 3%
+    max-width: 300px
+  .box8
+    left: 2%
+    top: 22%
+.box-max-image
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  .text
+    position: absolute
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 111px
+    margin: 0 auto
+    p
+      color: #333333
+      font-size: 14px
+      line-height: 18px
+      margin: 20px auto 0
+
+//section advantages end
+
+//page contacts
+.contacts-page__content
+  width: 100%
+  display: flex
+  flex-direction: column
+
+.contacts-page__item
+  width: 100%
+  flex-wrap: wrap
+  justify-content: space-between
+  border:
+    bottom: 1px solid rgba(#b04db0, .1)
+  padding: 0 0 20px 0
+  &:last-child
+    border: none
+    margin: 0
+  .box
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    color: #303030
+    line-height: 22px
+    h4
+      color: #303030
+      font:
+        weight: 700
+        size: 16px
+      line-height: 18px
+      margin-bottom: 10px
+    .output
+      color: #ef4751
+      font-weight: 500
+    a
+      color: #303030
+    span
+      font-weight: 300
+      display: block
+  .box-address
+    max-width: 230px
+  .box__city, .box__mail
+    margin-bottom: 35px
+  .box__skype
+    margin-bottom: 15px
+  .box__phone
+    ul
+      li
+        display: flex
+        flex-direction: row
+        align-items: center
+        .icon
+          margin-left: 15px
+
+.box-map
+  width: 300px
+  height: 242px
+
+.box__gallery
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 239px
+  .gallery-item
+    width: 116px
+    height: 105px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0 7px
+    overflow: hidden
+    img
+      width: auto
+      height: 100%
+      max-width: none
+      flex: 1
+//page contacts end
+
+
+//page product
+.product-page__content
+  padding: 30px 0
+  border:
+    top: 1px solid rgba(#ececec, .7)
+    bottom: 1px solid rgba(#ececec, .7)
+  .container
+    flex-direction: row
+    justify-content: space-between
+    align-items: flex-start
+    flex-wrap: wrap
+    .product-image
+      width: 650px
+      .product-image__slider
+        max-width: 93%
+        margin: 38px auto 0
+        .item
+          width: 187px
+          height: 126px
+          overflow: hidden
+          img
+            width: 100%
+      .product-image__max
+        height: 232px
+    .product-description
+      font-size: 15px
+      padding: 0
+      border: none
+        radius: 0
+      width: auto
+      align-items: flex-end
+      margin: 0
+      .card-characteristics
+        margin: 0
+        color: #494949
+        font:
+          size: 15px
+          weight: normal
+      .title
+        margin: 10px 0 5px
+      .card-line
+        width: 100%
+        padding: 20px 0
+        border:
+          top: 1px solid #eaeaea
+      .card__bottom
+        border: none
+        margin: 0 0 20px
+        padding: 0
+      .compare-icon, .price
+        width: 50%
+      .price
+        border:
+          left: 1px solid rgba(#d4d4d4, .7)
+        font-size: 32px
+        line-height: 32px
+        .old-price
+          font-size: 16px
+          line-height: 16px
+          margin-bottom: 5px
+      .btn-all
+        font:
+          size: 14px
+          weight: normal
+
+
+.article
+  color: #494949
+  font-size: 12px
+
+.in-stock
+  color: #f33c49
+  font-size: 15px
+  margin: 20px 0
+
+.amount
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  align-items: center
+  color: #494949
+  p
+    margin-right: 20px
+  span
+    min-width: 16px
+    width: 16px
+    height: 15px
+    border: 1px solid #a6b2bd
+      radius: 4px
+    background-image: linear-gradient(to top, #f5f5f5 0%, #f5f5f5 10%, #ffffff 100%)
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #737373
+    box-shadow: 1px 1px 0 #ffffff
+    cursor: pointer
+  input
+    text-align: center
+    border: 1px solid #a6b2bd
+      radius: 4px
+    background-color: #ffffff
+    width: 31px
+    height: 25px
+    margin: 0 5px
+    color: #434b4c
+    font-size: 14px
+//page product end
+
+//advantages-product
+.advantages-product
+  margin: 25px 0
+  width: 100%
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+
+.advantages-product__item
+  border: 1px solid rgba(#bfbfbf, .45)
+  width: 49%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  padding: 25px 0
+  box-sizing: border-box
+  color: #343434
+  font-size: 16px
+  .icon
+    margin-right: 30px
+  h4
+    font:
+      weight: 700
+      size: 20px
+//advantages-product end
+
+
+//tabs
+.tabs__content
+  display: none
+  flex-direction: column
+  align-items: flex-start
+  padding: 25px 40px
+  box-sizing: border-box
+  border:
+    left: 1px solid #e5e5e5
+    right: 1px solid #e5e5e5
+    bottom: 1px solid #e5e5e5
+  h3
+    font:
+      weight: 700
+      size: 18px
+    text-transform: uppercase
+    color: #000
+    margin: 0 0 20px
+    width: 100%
+  .wrapper-row
+    width: 100%
+    margin: 0
+
+.tabs__content.active
+  display: flex
+
+.tabs
+  display: flex
+  flex-direction: column
+  width: 100%
+  margin: 0 0 40px 0
+  .tabs__caption
+    width: 100%
+    background-color: #f2f1f1
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-start
+    flex-wrap: wrap
+    li
+      color: #454545
+      letter-spacing: 0.16px
+      font-size: 16px
+      padding: 15px 40px
+      box-sizing: border-box
+      border:
+        right: 1px solid rgba(#000,.06)
+      cursor: pointer
+      transition: .3s ease
+    .active
+      background-color: #f43d4b
+      color: #ffffff
+//tabs end
+
+//list-specifications
+.list-specifications
+  width: 49%
+  display: flex
+  flex-direction: column
+  li
+    padding: 16px 20px
+    box-sizing: border-box
+    border-radius: 3px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    color: #4f4f4f
+    font-size: 15px
+    span
+      color: #f43f4c
+      font-weight: 700
+    &:nth-child(even)
+      background-color: rgba(#f43543, .1)
+//list-specifications end
+
+
+//modal popup
+.modal_div
+  width: 370px
+  height: 530px
+  box-shadow: 2px 1px 87px rgba(0, 0, 0, 0.22)
+  border: none
+    radius: 3px
+  background-color: #ffffff
+  position: fixed
+  top: 45%
+  left: 50%
+  margin: -265px 0 0 -170px
+  padding: 40px 45px
+  box-sizing: border-box
+  color: #3a3a3a
+  z-index: 10
+  display: none
+  .modal_close
+    background-color: #bdbdbd
+    width: 19px
+    height: 19px
+    border-radius: 50%
+    text-align: right
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #ffffff
+    cursor: pointer
+    transition: .3s ease
+    position: absolute
+    right: 16px
+    top: 18px
+    &:hover
+      background: $accent1
+  h3
+    font-size: 26px
+  p
+    font-size: 14px
+.modal-form
+  display: flex
+  flex-direction: column
+  margin: 23px 0 0 0
+  width: 100%
+  label
+    display: flex
+    flex-direction: column
+    width: 100%
+    margin-bottom: 15px
+    span
+      font-size: 13px
+      color: #3a3a3a
+      line-height: 20px
+  input, textarea
+    width: 100%
+    border: 1px solid #cccccc
+      radius: 3px
+    background-color: #ffffff
+    padding: 0 19px
+    height: 43px
+    box-sizing: border-box
+    font-size: 15px
+    color: #767676
+    letter-spacing: -0.38px
+  button
+    margin: 0
+    width: 128px
+    height: 45px
+    text-transform: uppercase
+    font:
+      size: 14px
+      weight: 700
+    letter-spacing: 0
+  textarea
+    height: 120px
+
+#one-click-modal
+  width: 504px
+  height: 200px
+  margin: -100px 0 0 -252px
+  .modal-form
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    input
+      width: calc(100% - 135px)
+
+#cheaper-modal
+  height: 465px
+  margin-top: -233px
+//modal popup end
+
+
+//секция сравнения
+.comparison__content
+  width: 100%
+  display: flex
+  flex-direction: column
+
+.comparison__head
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  flex-wrap: wrap
+  width: 100%
+  .comparison__head-fist
+    width: 230px
+    flex: none
+    display: flex
+    flex-direction: column
+    align-items: center
+    box-sizing: border-box
+    border:
+      right: 1px solid rgba(135, 135, 134, 0.1)
+    .comparison-chars
+      text-align: left
+    .comparison-item__top
+      padding: 50px 22px 47px 0
+    .comparison-item__bottom
+      padding: 30px 47px 0 0
+  .comparison__head-item
+    border:
+      right: 1px solid rgba(135, 135, 134, 0.1)
+
+
+
+.comparison-chars
+  color: #303030
+  font-size: 14px
+  line-height: 20px
+  width: 100%
+  text-align: center
+
+.comparison-item
+  position: relative
+  display: flex
+  flex-direction: column
+  width: 26.7%
+  border:
+    right: 1px solid rgba(135, 135, 134, 0.1)
+  &__top
+    width: 100%
+    padding: 30px 47px 20px
+    border-bottom: 1px solid rgba(135, 135, 134, 0.1)
+  &__bottom
+    padding: 30px
+
+
+
+  .card-product
+    margin: 0
+    width: 100%
+    padding: 0
+    &:hover
+      border-color: transparent
+
+    .image
+      margin: 35px auto 10px
+    .btn-details
+      margin: 0
+    &:before
+      display: none
+
+.close
+  cursor: pointer
+  transition: .3s ease
+  position: absolute
+  right: 20px
+  top: 0
+  width: 44px
+  height: 44px
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #f9f9f9
+  z-index: 1
+  &:hover
+    background: $accent1
+//секция сравнения end
+
+
+//список характеристик сравнения
+.comparison-chars
+  li
+    margin-bottom: 10px
+    font-size: 14px
+    &:last-child
+      margin: 0
+//список характеристик сравнения end
+
+//page basket
+.basket-page__content
+  width: 100%
+  display: flex
+  flex-direction: column
+  margin: 0 0 30px 0
+  .basket-page__content-title
+    width: 100%
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    li
+      color: #7c7c7c
+      font-size: 13px
+      text-transform: uppercase
+      letter-spacing: 0.63px
+      text-align: center
+      &:last-child
+        width: 44px
+      &:first-child
+        width: 355px
+      &:nth-child(2)
+        width: 120px
+      &:nth-child(3)
+        width: 150px
+      &:nth-child(4)
+        width: 100px
+
+.basket-page__product-line
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  padding: 30px 0
+  box-sizing: border-box
+  border:
+    bottom: 1px solid #eeeeee
+  &:last-child
+    border: none
+  .image
+    width: 93px
+  .box
+    display: flex
+    flex-direction: row
+    align-items: center
+    width: 355px
+  .title
+    color: #303030
+    font-size: 15px
+    letter-spacing: 0.23px
+    margin: 0 0 0 30px
+  .price
+    width: 120px
+    text-align: center
+    color: #646464
+    font-size: 16px
+    line-height: 16.65px
+    .new-price
+      color: #f43846
+      text-transform: uppercase
+      font:
+        size: 21px
+        weight: 500
+      line-height: 21px
+  .box-amount
+    width: 150px
+    justify-content: center
+
+  .close
+    width: 44px
+    position: relative
+    top: 0
+    right: 0
+
+.the-sum
+  width: 100px
+  text-align: center
+  color: #f43846
+  text-transform: uppercase
+  font:
+    size: 21px
+    weight: 500
+
+.basket-page__product-total
+  display: flex
+  flex-direction: row
+  align-items: center
+  padding: 30px 0
+  box-sizing: border-box
+  width: 100%
+  .btn-details
+    width: auto
+    height: 55px
+    padding: 0 70px
+    font-size: 16px
+    margin: 0
+  .the-sum
+    width: auto
+    margin: 0 150px 0 0
+  .box-total
+    margin: 0 160px 0 auto
+    text-transform: uppercase
+    color: #414041
+    font:
+      weight: 700
+      size: 16px
+//page basket end
+
+//оформление заказа
+.checkout
+  margin-bottom: 35px
+  h3
+    color: #313131
+    font-size: 20px
+    width: 100%
+  .modal-form
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+    .btn-details
+      width: auto
+      height: 55px
+      padding: 0 65px
+      text-transform: none
+      letter-spacing: 0
+      font-size: 16px
+    .form-right
+      >label
+        span
+          min-width: 60px
+          width: 60px
+    .form-left, .form-right
+      width: 47%
+    label
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+      justify-content: space-between
+      color: #333333
+      font-size: 15px
+      span
+        width: 120px
+        min-width: 120px
+        display: block
+        .label-description
+          color: #a0a0a0
+          font:
+            weight: 300
+            size: 11px
+          width: auto
+    .comment
+      width: 100%
+//оформление заказа end
+
+//delivery-payment
+.delivery-payment
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 65px 0 30px
+  h3
+    color: #313131
+    text-transform: uppercase
+    font:
+      weight: 700
+      size: 20px
+  .payment-item
+    .icon
+      width: 80px
+  .delivery-item
+    .icon
+      width: 130px
+  .delivery-payment__item
+    width: 49%
+  .delivery-payment__list
+    width: 100%
+    li
+      display: flex
+      flex-direction: row
+      align-items: center
+      border:
+        bottom: 1px solid #eeeeee
+      width: 100%
+      padding: 24px 0
+      box-sizing: border-box
+      label
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: flex-start
+        span
+          letter-spacing: 0.35px
+          color: #000000
+          min-width: auto
+          width: auto
+        .icon
+          height: 37px
+          display: flex
+          align-items: center
+          justify-content: center
+      .checkbox
+        .checkbox-custom
+          width: 34px
+          min-width: 34px
+          height: 34px
+          border-radius: 50%
+          margin: 0
+        .checkbox-inp
+          &:checked + .checkbox-custom
+            border-color: $accent1
+            &::before
+              content: ''
+              background: url("../img/checkbox.png") no-repeat center
+              left: 0
+              top: 0
+//delivery-payment end
+
+
+//ползунок цен
+.range_val
+  position: relative
+  margin: 19px 0
+  input
+    width: 100px
+    height: 34px
+    border: 1px solid #e6e6e6
+      radius: 3px
+    background: #fbfbfb
+    box-sizing: border-box
+    padding: 0
+    text-align: center
+    color: #161616
+    cursor: pointer
+    font:
+      size: 13px
+      family: 'Roboto', sans-serif
+  .inp-group
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+.slider-range
+  height: 4px
+  background: #91919d
+  position: relative
+  border-radius: 2px
+
+.ui-state-default, .ui-slider-handle
+  width: 4px
+  height: 10px
+  box-sizing: border-box
+  background: $accent1
+  display: inline-block
+  position: absolute
+  outline: none
+  top: -4px
+  cursor: pointer
+  border: none
+    radius: 2px
+
+
+.ui-widget-content
+  background: #e6e6e6
+
+.ui-widget-header
+  background: $accent1!important
+  height: 4px!important
+  border: none!important
+  left: 0
+  top: 0
+  position: absolute
+//ползунок цен end
+
+//заголовок в каталоге
+.catalog-page__content-title
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  position: relative
+  margin: 0 0 35px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 15px
+    width: 100%
+    height: 1px
+    background: #eeeeee
+  h3
+    position: relative
+    background: #fff
+    padding: 0 18px 0 0
+    color: $h2
+    font:
+      size: 22px
+      weight: 700
+//заголовок в каталоге end
+
+//сортировка
+.sorting
+  display: flex
+  flex-direction: row
+  align-items: center
+  color: $h2
+  font-size: 13px
+  background: #ffffff
+  position: relative
+  padding: 0 0 0 28px
+  p
+    margin-right: 10px
+  .city-wrapper
+    padding-right: 12px
+    .icon
+      right: 0
+      top: 4px
+      line-height: 10px
+    select
+      font-size: 13px
+//сортировка end
+
+
+//карточка продукта в каталоге
+.catalog-product__item
+  margin-bottom: 45px
+  display: flex
+  flex-direction: column
+  position: relative
+  width: 293px
+  height: 330px
+  border-right: 1px solid rgba(#878786, .1)
+  cursor: pointer
+  .image
+    position: relative
+    width: 100%
+    height: 182px
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      height: 100%
+      width: auto
+      max-width: none
+      flex: 1
+  .title
+    text-align: center
+    color: $name-product
+    font:
+      size: 14px
+      weight: 700
+    letter-spacing: 0.14px
+    text-transform: uppercase
+  .block-hover
+    padding: 0 20px
+    background: rgba(#fff, .92)
+    .catalog-gallery__item-description
+      box-shadow: none
+      background: transparent
+      padding: 17px 0
+      .list-price
+        li
+          line-height: 13px
+          font-size: 13px
+        span
+          color: $accent1
+        p
+          max-width: 190px
+  &:hover
+    .title
+      color: $accent1
+      text-decoration: underline
+    .block-hover
+      border-color: $accent1
+      z-index: 2
+    .catalog-gallery__item-description
+      display: block
+//карточка продукта в каталоге end
+
+//catalog-content
+.catalog-content
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: flex-start
+  flex-wrap: wrap
+//catalog-content end
+
+
+//page delivery
+.news-page__box
+  margin-bottom: 50px
+  h3
+    font:
+      size: 18px
+      weight: 700
+    margin-bottom: 20px
+//page delivery end
+
+
+@import "media"
+// Всегда в конце

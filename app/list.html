@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Carstyle</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<!--шапка-->
+<header>
+
+    <div class="header__top">
+        <div class="container">
+
+            <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+            <nav class="main-menu">
+                <ul class="list-group main-menu__list-group">
+                    <li class="list-group__item header-box"><a class="list-group__item-links" href="#">О нас </a></li>
+                    <li class="list-group__item header-box active"><a class="list-group__item-links"
+                                                                      href="#">Новости </a></li>
+                    <li class="list-group__item header-box"><a class="list-group__item-links" href="#">Оплата и
+                                                                                                       доставка </a>
+                    </li>
+                    <li class="list-group__item header-box"><a class="list-group__item-links" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="item-city header-box">
+                <span>Выбрать город</span>
+
+                <label class="city-wrapper">
+                    <select name="city" class="city-dropdown">
+                        <option value="Киев">Киев</option>
+                        <option value="Киев">Киев</option>
+                        <option value="Киев">Киев</option>
+                    </select>
+                    <span class="icon"><img src="img/arrow-bottom.png" alt=""></span>
+                </label>
+            </div>
+
+            <ul class="list-group item-schedule header-box">
+                <li>Пн-Пт: 9-19</li>
+                <li>Сб: 10-15, Вс: вых</li>
+            </ul>
+
+
+            <ul class="list-group phone-group header-box">
+                <li><a href="tel:+380983050906" class="phone">
+                    <span class="icon"><img src="img/phone-icon.png" alt=""></span>
+                    (098) 305-09-06</a></li>
+                <li><a href="tel:+380635314630" class="phone">
+                    <span class="icon"><img src="img/phone-icon.png" alt=""></span>
+                    (063) 531-46-30 </a></li>
+                <li><a href="tel:+380501373331" class="phone">
+                    <span class="icon"><img src="img/phone-icon.png" alt=""></span>
+                    (050) 137-33-31</a></li>
+                <li><a href="tel:+380443837300" class="phone">
+                    <span class="icon"><img src="img/phone-icon.png" alt=""></span>
+                    (044) 383-73-00</a></li>
+            </ul>
+
+            <ul class="list-group language-group">
+                <li class="active"><a href="#">Ru</a></li>
+                <li><a href="#">Ua</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="header__menu">
+        <div class="container">
+            <ul class="menu-product">
+                <li><a href="#">Багажники
+                                (поперечины)
+                                на крышу</a></li>
+                <li>
+                    <a href="#">Грузовые
+                                боксы</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">На гладкую крышу</a></li>
+                        <li><a href="#">На крепежные места</a></li>
+                        <li><a href="#">На рейлинг (просветный)</a></li>
+                        <li><a href="#">На рейлинг (интегрированные)</a></li>
+                        <li><a href="#">На водостоки</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Крепления
+                                для велосипедов</a></li>
+                <li><a href="#">Крепления
+                                для лыж и сноубордов,
+                                лодок и каяк</a></li>
+                <li><a href="#">Рюкзаки
+                                и сумки Thule</a></li>
+                <li><a href="#">Автоаксессуары</a></li>
+                <li><a href="#">Распродажа
+                                и б/у</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="header__bottom">
+        <div class="container">
+
+            <form method="post" class="search header-box">
+                <label>
+                    <input type="text" name="search" placeholder="Поиск">
+                </label>
+                <button type="submit"><img src="img/search-icon.png" alt=""></button>
+            </form>
+
+            <a href="#" class="compare header-box">
+                <span class="box-total">14</span>
+                <span class="icon"><img src="img/compare-icon.png" alt=""></span>
+            </a>
+            <a href="#" class="basket header-box">
+                <span class="box-total">6</span>
+                <span class="icon"><img src="img/cart-icon.png" alt=""></span>
+            </a>
+        </div>
+    </div>
+
+</header>
+<!--шапка end-->
+
+<div class="content">
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="page-news.html">Страница Новости</a></li>
+            <li><a href="select-car-trunk.html">Подбор</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="gallery2.html">Галерея2</a></li>
+            <li><a href="page-rent.html">Аренда</a></li>
+            <li><a href="page-company.html">О компани</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="product.html">Карточка товара</a></li>
+            <li><a href="page-comparison.html">Сравнение</a></li>
+            <li><a href="page-basket.html">Корзина</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="page-currency.html">Оплата и доставка</a></li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <a href="index.html" class="logo"><img src="img/logo-footer.png" alt=""></a>
+
+        <div class="box-text">
+            <p>Воспроизводимые на данном сайте
+               торговые марки используются с разрешения
+               правообладателя.</p>
+        </div>
+
+        <div class="box-text">
+            <p>Copyright <a href="index.html">carstyle.ua</a></p>
+            <p>Все права защищены © 2018</p>
+        </div>
+
+        <div class="item-social">
+            <p>Мы в соцсетях:</p>
+
+            <ul class="list-social list-group">
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
